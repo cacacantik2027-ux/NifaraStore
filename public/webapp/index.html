@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Nifara Store</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Poppins:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+
+<div class="app">
+
+  <header class="topbar">
+    <div class="topbar-mark">N</div>
+    <div class="topbar-text">
+      <h1>Nifara Store</h1>
+      <p><em>Boutique fitur &amp; langganan premium</em></p>
+    </div>
+  </header>
+
+  <div class="rule-ornament"><span></span><i>&#10022;</i><span></span></div>
+
+  <nav class="tabs" id="tabs">
+    <button class="tab active" data-tab="catalog">Koleksi</button>
+    <button class="tab" data-tab="orders">Pesanan</button>
+    <button class="tab" data-tab="subs">Langganan</button>
+    <button class="tab tab-admin hidden" data-tab="admin">Admin</button>
+  </nav>
+
+  <main id="views">
+
+    <section id="view-catalog" class="view active">
+      <div id="catalog-list" class="stub-list">
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+      </div>
+    </section>
+
+    <section id="view-orders" class="view">
+      <div id="orders-list" class="stub-list"></div>
+    </section>
+
+    <section id="view-subs" class="view">
+      <div id="subs-list" class="stub-list"></div>
+    </section>
+
+    <section id="view-admin" class="view">
+      <div class="admin-toolbar">
+        <button class="chip active" data-status="pending">Menunggu</button>
+        <button class="chip" data-status="approved">Disetujui</button>
+        <button class="chip" data-status="rejected">Ditolak</button>
+      </div>
+      <div id="admin-list" class="stub-list"></div>
+    </section>
+
+  </main>
+
+  <footer class="foot-note">Nifara Store &middot; dengan sentuhan pribadi dari admin kami</footer>
+</div>
+
+<!-- Modal checkout -->
+<div id="checkout-modal" class="modal-overlay hidden">
+  <div class="modal ticket">
+    <div class="modal-perforation"></div>
+    <button class="modal-close" id="checkout-close">&times;</button>
+    <p class="modal-eyebrow">Konfirmasi Pesanan</p>
+    <h2 id="checkout-title">Checkout</h2>
+    <p class="modal-sub" id="checkout-price"></p>
+
+    <div class="payment-box" id="payment-box"></div>
+
+    <label class="field-label" for="payment-name">Nama pengirim transfer / QRIS</label>
+    <input id="payment-name" type="text" placeholder="Contoh: Budi Santoso" />
+
+    <label class="field-label" for="order-note">Catatan (opsional)</label>
+    <textarea id="order-note" rows="2" placeholder="Contoh: transfer jam 20:15 dari BCA"></textarea>
+
+    <button id="submit-order" class="btn-primary">Kirim Pesanan</button>
+    <p class="modal-hint">Tim kami akan mencocokkan nama di atas dengan pembayaran yang diterima, lalu menyetujui pesananmu secara personal.</p>
+  </div>
+</div>
+
+<div id="toast" class="toast hidden"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
