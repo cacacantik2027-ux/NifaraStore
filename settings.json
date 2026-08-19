@@ -1,0 +1,37 @@
+{
+  "storeName": "Nifara Store",
+  "welcome": {
+    "text": "Halo {name}! 👋\n\nSelamat datang di *Nifara Store* ✨\nToko terpercaya untuk kebutuhan digitalmu.\n\nSilakan pilih menu di bawah ini 👇",
+    "photoFileId": null
+  },
+  "ownerIds": [],
+  "adminIds": [],
+  "adminGroupId": null,
+  "categories": [
+    {
+      "id": "cat_netflix",
+      "name": "Netflix Premium",
+      "products": [
+        { "id": "p1", "name": "Sharing 1 Bulan", "price": 25000, "note": "1 profil" },
+        { "id": "p2", "name": "Private 1 Bulan", "price": 55000, "note": "Full akses" }
+      ]
+    },
+    {
+      "id": "cat_spotify",
+      "name": "Spotify Premium",
+      "products": [
+        { "id": "p3", "name": "Individu 1 Bulan", "price": 15000, "note": "Akun sendiri" },
+        { "id": "p4", "name": "Family 1 Bulan", "price": 8000, "note": "Per slot" }
+      ]
+    }
+  ],
+  "payment": {
+    "qrisFileId": null,
+    "qrisNote": "Scan QRIS di atas menggunakan e-wallet / m-banking apa saja, lalu kirim bukti transfer ke admin.",
+    "bankTransfer": "Belum diatur oleh admin."
+  },
+  "features": {
+    "useButtonStyle": true,
+    "useRichTable": false
+  }
+}

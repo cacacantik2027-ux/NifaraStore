@@ -1,0 +1,15 @@
+{
+  "name": "nifara-store-bot",
+  "version": "1.0.0",
+  "description": "Bot Telegram Nifara Store - katalog, order, QRIS, panel admin/owner",
+  "main": "src/bot.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/bot.js",
+    "dev": "node --watch src/bot.js"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.66.0",
+    "dotenv": "^16.4.5"
+  }
+}
