@@ -1,0 +1,63 @@
+{
+  "storeName": "Nifara Store",
+  "welcome": {
+    "text": "Halo {name}! 👋\n\nSelamat datang di *Nifara Store* ✨\nToko terpercaya untuk kebutuhan digitalmu.\n\nSilakan pilih menu di bawah ini 👇",
+    "photoFileId": null
+  },
+  "catalogInfo": {
+    "buttonLabel": "📋 Katalog & Pricelist",
+    "description": "Cek katalog & pricelist produk kami di sini. Tap *Order Sekarang* untuk mulai pesan ya!",
+    "photoFileId": null
+  },
+  "ownerIds": [],
+  "adminIds": [],
+  "adminGroupId": null,
+  "categories": [
+    {
+      "id": "cat_netflix",
+      "name": "Netflix Premium",
+      "products": [
+        { "id": "p1", "name": "Sharing 1 Bulan", "price": 25000, "note": "1 profil", "description": "Akun Netflix sharing, 1 profil untukmu sendiri, garansi full 30 hari.", "photoFileId": null },
+        { "id": "p2", "name": "Private 1 Bulan", "price": 55000, "note": "Full akses", "description": "Akun Netflix private, kamu pegang penuh, bisa ganti email & password sendiri.", "photoFileId": null }
+      ]
+    },
+    {
+      "id": "cat_spotify",
+      "name": "Spotify Premium",
+      "products": [
+        { "id": "p3", "name": "Individu 1 Bulan", "price": 15000, "note": "Akun sendiri", "description": "Akun Spotify Premium individu, bebas iklan, kualitas audio tertinggi.", "photoFileId": null },
+        { "id": "p4", "name": "Family 1 Bulan", "price": 8000, "note": "Per slot", "description": "Slot Spotify Family, harga termurah per orang, tinggal pakai.", "photoFileId": null }
+      ]
+    }
+  ],
+  "paymentMethods": [
+    {
+      "id": "pm_qris1",
+      "name": "QRIS 1",
+      "imageFileId": null,
+      "note": "Scan QRIS ini pakai e-wallet / m-banking apa saja, lalu kirim bukti transfer ke admin."
+    },
+    {
+      "id": "pm_qris2",
+      "name": "QRIS 2",
+      "imageFileId": null,
+      "note": "QRIS cadangan (pakai ini kalau QRIS 1 sedang bermasalah)."
+    },
+    {
+      "id": "pm_bank",
+      "name": "Transfer Bank",
+      "imageFileId": null,
+      "note": "Belum diatur oleh admin."
+    },
+    {
+      "id": "pm_dana",
+      "name": "DANA",
+      "imageFileId": null,
+      "note": "Belum diatur oleh admin."
+    }
+  ],
+  "features": {
+    "useButtonStyle": true,
+    "useRichTable": false
+  }
+}
